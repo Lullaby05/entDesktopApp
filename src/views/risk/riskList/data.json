@@ -1,0 +1,82 @@
+{
+  "page": {
+    "total": 2,
+    "rows": [
+      {
+        "id": 22458,
+        "enterpriseId": null,
+        "pointId": null,
+        "pointDesc": "添加一条测试辨识",
+        "riskLevel": "01",
+        "eventCode": "02,021",
+        "emergencyContent": "*进行止血和采取必要的急救措施。  \n*启动应急预案。\n*立即拨打120、119急救电话。\n「车辆伤害」\n*如果有车辆压住伤者，应立即小心移开车辆，或用千斤顶顶起车辆，将伤者小心移出。再根据伤者的具体情况进行医疗救治。  \n*不要随意移动伤者，保持其呼吸道畅通。\n*根据伤者情况采取相应的急救措施。\n*拨打医院电话，将伤者送往医院治疗。",
+        "signsId": "9122",
+        "riskLevelType": 2,
+        "createBy": 172,
+        "createDate": null,
+        "updateBy": null,
+        "updateDate": null,
+        "emergencyMeasures": [
+          {
+            "id": 31632,
+            "rpdId": 22458,
+            "eventCode": "02",
+            "eventText": "车辆伤害",
+            "emergencyContent": "*进行止血和采取必要的急救措施。  \n*启动应急预案。\n*立即拨打120、119急救电话。"
+          },
+          {
+            "id": 31633,
+            "rpdId": 22458,
+            "eventCode": "021",
+            "eventText": "车祸",
+            "emergencyContent": "「车辆伤害」\n*如果有车辆压住伤者，应立即小心移开车辆，或用千斤顶顶起车辆，将伤者小心移出。再根据伤者的具体情况进行医疗救治。  \n*不要随意移动伤者，保持其呼吸道畅通。\n*根据伤者情况采取相应的急救措施。\n*拨打医院电话，将伤者送往医院治疗。"
+          }
+        ],
+        "riskControlManagers": [
+          {
+            "id": "1142111461187923968",
+            "riskPointId": 13854,
+            "riskControlId": 13988,
+            "controlManager": "定时监测",
+            "enterpriseId": 80,
+            "sort": 0,
+            "createId": 172,
+            "createTime": 1692342192000
+          },
+          {
+            "id": "1142111461187923969",
+            "riskPointId": 13854,
+            "riskControlId": 13988,
+            "controlManager": "定时管控和监测",
+            "enterpriseId": 80,
+            "sort": 1,
+            "createId": 172,
+            "createTime": 1692342192000
+          }
+        ],
+        "unitName": null,
+        "pointName": "8月17日16点18分风险",
+        "position": null,
+        "riskLevelText": "低风险",
+        "eventText": "车辆伤害,车祸",
+        "seriousness": null,
+        "signsImgUrl": "/files/RISK_SAFETY_SIGNS/ZHILING/6ca43005-5ba5-455e-934b-8a809f971e1b.png",
+        "measures": [
+          {
+            "id": 69385,
+            "pointDescId": 22458,
+            "measuresContent": "",
+            "attachement": null,
+            "seque": 1,
+            "checked": false
+          }
+        ],
+        "measuresContent": null,
+        "lScore": 1.0,
+        "eScore": 3.0,
+        "cScore": 3.0,
+        "sScore": null
+      }
+    ]
+  }
+}

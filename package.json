@@ -1,0 +1,206 @@
+{
+  "name": "xianghuitest",
+  "productName": "祥惠(测试版)",
+  "description": "xianghuitest",
+  "version": "0.0.0",
+  "author": "wml <2582767744@qq.com>",
+  "private": true,
+  "license": "MIT",
+  "main": "dist/main/build.js",
+  "build": {
+    "appId": "com.xkrsecure.xianghuitest",
+    "electronDownload": {
+      "mirror": "https://npmmirror.com/mirrors/electron/"
+    },
+    "files": [
+      "!node_modules",
+      "dist/**"
+    ],
+    "asar": true,
+    "asarUnpack": [
+      "**/*"
+    ],
+    "mac": {
+      "target": [
+        "dmg"
+      ],
+      "icon": "config/build/logo-512.ico",
+      "artifactName": "祥惠(测试版).dmg"
+    },
+    "linux": {
+      "target": [
+        "deb"
+      ]
+    },
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "config/build/logo-256.ico",
+      "artifactName": "祥惠(测试版).exe"
+    },
+    "publish": [
+      {
+        "provider": "github",
+        "url": "http://git.dev.xkrsecure.com/chenyuhan/entdesktopapp/-/releases/download/latest/"
+      }
+    ],
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "deleteAppDataOnUninstall": false,
+      "installerIcon": "config/build/logo-512.ico",
+      "uninstallerIcon": "config/build/logo-512.ico",
+      "installerHeader": "config/build/logo-512.ico",
+      "installerHeaderIcon": "config/build/logo-512.ico"
+    }
+  },
+  "scripts": {
+    "dev": "vite --config ./config/vite.config.dev.ts --host 0.0.0.0",
+    "dev:app": "chcp 65001 && esno ./config/script/startElectron.ts --env=development --watch",
+    "dev:app-mac": "esno ./config/script/startElectron.ts --env=development --watch",
+    "build": "cross-env NODE_OPTIONS=--max-old-space-size=4096 vite build --config ./config/vite.config.prod.ts ",
+    "build:app": "npm run build && esno ./config/script/startElectron.ts --env=production && node updatePackage.js && electron-builder",
+    "build:app-test": "npm run build && esno ./config/script/startElectron.ts --env=production && node updatePackage.js --dev && electron-builder",
+    "build:app-mac": "npm run build && esno ./config/script/startElectron.ts --env=production && node updatePackage.js && electron-builder --mac",
+    "report": "cross-env REPORT=true npm run build",
+    "preview": "npm run build && vite preview --host",
+    "type:check": "vue-tsc --noEmit --skipLibCheck",
+    "lint-staged": "npx lint-staged",
+    "lint": "eslint --ext \".js,.vue\" --ignore-path .gitignore . --fix",
+    "prepare": "husky install",
+    "test": "esno ./config/utils/wait.ts"
+  },
+  "lint-staged": {
+    "*.{js,ts,jsx,tsx}": [
+      "prettier --write",
+      "eslint --fix"
+    ],
+    "*.vue": [
+      "prettier --write",
+      "eslint --fix"
+    ],
+    "*.{less,css}": [
+      "prettier --write"
+    ]
+  },
+  "dependencies": {
+    "@arco-design/web-vue": "2.50",
+    "@element-plus/icons-vue": "^2.1.0",
+    "@hyman.young/iotv": "^1.1.14",
+    "@rollup/plugin-alias": "^5.0.0",
+    "@rollup/plugin-commonjs": "^24.1.0",
+    "@rollup/plugin-json": "^6.0.0",
+    "@rollup/plugin-node-resolve": "^15.0.2",
+    "@tinymce/tinymce-vue": "^5.1.0",
+    "@tweenjs/tween.js": "^23.1.1",
+    "@vant/area-data": "^1.4.0",
+    "@vuemap/vue-amap": "^2.0.5",
+    "@vueuse/core": "^9.3.0",
+    "@zxing/library": "^0.19.2",
+    "axios": "^1.4.0",
+    "dayjs": "^1.11.5",
+    "decimal.js": "^10.4.3",
+    "echarts": "^5.4.0",
+    "electron-is-dev": "^2.0.0",
+    "electron-log": "^5.1.7",
+    "electron-updater": "^6.2.1",
+    "element-plus": "^2.3.4",
+    "esno": "^4.7.0",
+    "express": "^4.19.2",
+    "flv.js": "^1.6.2",
+    "less": "^4.1.3",
+    "lodash": "^4.17.21",
+    "mitt": "^3.0.0",
+    "moment": "^2.29.4",
+    "monaco-editor": "^0.38.0",
+    "nprogress": "^0.2.0",
+    "ora": "^6.3.0",
+    "pinia": "^2.0.23",
+    "pinia-plugin-persist": "^1.0.0",
+    "qrcode.vue": "^3.4.0",
+    "query-string": "^8.0.3",
+    "rollup-plugin-esbuild": "^5.0.0",
+    "signature_pad": "^4.1.5",
+    "snowflake-id": "^1.1.0",
+    "tinymce": "^6.0.3",
+    "unplugin-auto-import": "^0.17.6",
+    "vant": "^4.1.0",
+    "vue": "^3.2.40",
+    "vue-echarts": "^6.2.3",
+    "vue-i18n": "^9.2.2",
+    "vue-router": "^4.0.14",
+    "vue3-print-nb": "^0.1.4",
+    "vuedraggable": "^4.1.0",
+    "vuex": "^4.1.0",
+    "wait-on": "^7.0.1"
+  },
+  "devDependencies": {
+    "@arco-plugins/vite-vue": "^1.4.5",
+    "@commitlint/cli": "^17.1.2",
+    "@commitlint/config-conventional": "^17.1.0",
+    "@types/lodash": "^4.14.186",
+    "@types/mockjs": "^1.0.7",
+    "@types/nprogress": "^0.2.0",
+    "@types/sortablejs": "^1.15.0",
+    "@typescript-eslint/eslint-plugin": "^5.40.0",
+    "@typescript-eslint/parser": "^5.40.0",
+    "@vitejs/plugin-vue": "^3.2.0",
+    "@vitejs/plugin-vue-jsx": "^2.0.1",
+    "@vue/babel-plugin-jsx": "^1.1.1",
+    "cross-env": "^7.0.3",
+    "electron": "^24.1.2",
+    "electron-builder": "^24.13.3",
+    "electron-connect": "^0.6.3",
+    "electron-tabs": "^1.0.1",
+    "eslint": "^8.25.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-import-resolver-typescript": "^3.5.1",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-vue": "^9.6.0",
+    "husky": "^8.0.1",
+    "less": "^4.1.3",
+    "lint-staged": "^13.0.3",
+    "mockjs": "^1.1.0",
+    "prettier": "^2.7.1",
+    "rollup": "^3.20.6",
+    "rollup-plugin-visualizer": "^5.12.0",
+    "stylelint": "^14.13.0",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-recommended-vue": "^1.4.0",
+    "stylelint-config-standard": "^29.0.0",
+    "stylelint-order": "^5.0.0",
+    "terser": "^5.31.1",
+    "typescript": "^4.8.4",
+    "unplugin-auto-import": "^0.17.6",
+    "unplugin-vue-components": "^0.24.1",
+    "uuid": "^10.0.0",
+    "vite": "^3.2.5",
+    "vite-plugin-compression": "^0.5.1",
+    "vite-plugin-eslint": "^1.8.1",
+    "vite-plugin-imagemin": "^0.6.1",
+    "vite-plugin-svg-icons": "^2.0.1",
+    "vite-plugin-vue-setup-extend": "^0.4.0",
+    "vite-svg-loader": "^3.6.0",
+    "vue-cli-plugin-style-resources-loader": "^0.1.5",
+    "vue-eslint-parser": "^9.4.3",
+    "vue-tsc": "^1.0.14"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "resolutions": {
+    "bin-wrapper": "npm:bin-wrapper-china",
+    "rollup": "^2.56.3",
+    "gifsicle": "5.2.0"
+  }
+}

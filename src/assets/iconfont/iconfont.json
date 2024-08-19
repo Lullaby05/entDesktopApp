@@ -1,0 +1,254 @@
+{
+  "id": "4421375",
+  "name": "安全预警智能工具",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1411021",
+      "name": "1流量监测",
+      "font_class": "liuliangjiance",
+      "unicode": "e61c",
+      "unicode_decimal": 58908
+    },
+    {
+      "icon_id": "17961905",
+      "name": "天气监测",
+      "font_class": "tianqijiance",
+      "unicode": "e63b",
+      "unicode_decimal": 58939
+    },
+    {
+      "icon_id": "10395530",
+      "name": "监测预警",
+      "font_class": "jianceyujing1",
+      "unicode": "e65a",
+      "unicode_decimal": 58970
+    },
+    {
+      "icon_id": "32129093",
+      "name": "2-1预警-监测预警",
+      "font_class": "a-2-1yujing-jianceyujing",
+      "unicode": "e685",
+      "unicode_decimal": 59013
+    },
+    {
+      "icon_id": "3091223",
+      "name": "消息中心",
+      "font_class": "xiaoxizhongxin",
+      "unicode": "e868",
+      "unicode_decimal": 59496
+    },
+    {
+      "icon_id": "3702629",
+      "name": "用户管理",
+      "font_class": "navicon-yhgl",
+      "unicode": "e641",
+      "unicode_decimal": 58945
+    },
+    {
+      "icon_id": "13030039",
+      "name": "成员用户管理",
+      "font_class": "chengyuanyonghuguanli",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "13972383",
+      "name": "消息中心",
+      "font_class": "xiaoxizhongxin1",
+      "unicode": "e66b",
+      "unicode_decimal": 58987
+    },
+    {
+      "icon_id": "18368010",
+      "name": "用户管理",
+      "font_class": "yonghuguanli",
+      "unicode": "e681",
+      "unicode_decimal": 59009
+    },
+    {
+      "icon_id": "16732722",
+      "name": "监测预警",
+      "font_class": "jianceyujing",
+      "unicode": "e72a",
+      "unicode_decimal": 59178
+    },
+    {
+      "icon_id": "32482112",
+      "name": "应用监测预警系统 首页图标_1",
+      "font_class": "a-yingyongjianceyujingxitongshouyetubiao_1",
+      "unicode": "e66c",
+      "unicode_decimal": 58988
+    },
+    {
+      "icon_id": "1346662",
+      "name": "默认头像",
+      "font_class": "morentouxiang",
+      "unicode": "e62f",
+      "unicode_decimal": 58927
+    },
+    {
+      "icon_id": "5427801",
+      "name": "公司",
+      "font_class": "gongsi",
+      "unicode": "e623",
+      "unicode_decimal": 58915
+    },
+    {
+      "icon_id": "39325041",
+      "name": "全部展开",
+      "font_class": "a-lujing1",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "22572454",
+      "name": "全部展开",
+      "font_class": "quanbuzhankai",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    },
+    {
+      "icon_id": "3140673",
+      "name": "最大化",
+      "font_class": "zuidahua1",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
+    },
+    {
+      "icon_id": "13876855",
+      "name": "无消息",
+      "font_class": "wuxiaoxi",
+      "unicode": "e74a",
+      "unicode_decimal": 59210
+    },
+    {
+      "icon_id": "39135721",
+      "name": "风险评估",
+      "font_class": "fengxianpinggu-red",
+      "unicode": "fdad",
+      "unicode_decimal": 64941
+    },
+    {
+      "icon_id": "39135722",
+      "name": "风险评估",
+      "font_class": "fengxianpinggu-yellow",
+      "unicode": "fdae",
+      "unicode_decimal": 64942
+    },
+    {
+      "icon_id": "39135733",
+      "name": "风险评估",
+      "font_class": "fengxianpinggu-orange",
+      "unicode": "fdaf",
+      "unicode_decimal": 64943
+    },
+    {
+      "icon_id": "25670245",
+      "name": "风险评估",
+      "font_class": "fengxianpinggu-blue",
+      "unicode": "fdac",
+      "unicode_decimal": 64940
+    },
+    {
+      "icon_id": "39134443",
+      "name": "icon-临时用电安全作业",
+      "font_class": "icon-linshiyongdiananquanzuoye",
+      "unicode": "e60f",
+      "unicode_decimal": 58895
+    },
+    {
+      "icon_id": "5387942",
+      "name": "取消全屏_o",
+      "font_class": "quxiaoquanping_o",
+      "unicode": "eb98",
+      "unicode_decimal": 60312
+    },
+    {
+      "icon_id": "5388068",
+      "name": "登出_o",
+      "font_class": "dengchu_o",
+      "unicode": "ebcc",
+      "unicode_decimal": 60364
+    },
+    {
+      "icon_id": "12550361",
+      "name": "全屏",
+      "font_class": "quanping",
+      "unicode": "e626",
+      "unicode_decimal": 58918
+    },
+    {
+      "icon_id": "35744637",
+      "name": "风险管控执行",
+      "font_class": "fengxianguankongzhihang",
+      "unicode": "e646",
+      "unicode_decimal": 58950
+    },
+    {
+      "icon_id": "7289514",
+      "name": "风险报告",
+      "font_class": "fengxianbaogao",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    },
+    {
+      "icon_id": "38272871",
+      "name": "风险管控清单",
+      "font_class": "fengxianguankongqingdan",
+      "unicode": "e723",
+      "unicode_decimal": 59171
+    },
+    {
+      "icon_id": "4485682",
+      "name": "最大化",
+      "font_class": "zuidahua",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "12538232",
+      "name": "隐患管理",
+      "font_class": "yinhuanguanli",
+      "unicode": "e61b",
+      "unicode_decimal": 58907
+    },
+    {
+      "icon_id": "12820190",
+      "name": "应急管理",
+      "font_class": "yingjiguanli",
+      "unicode": "e632",
+      "unicode_decimal": 58930
+    },
+    {
+      "icon_id": "15929176",
+      "name": "安全管理",
+      "font_class": "anquanguanli",
+      "unicode": "e696",
+      "unicode_decimal": 59030
+    },
+    {
+      "icon_id": "37240374",
+      "name": "工作台",
+      "font_class": "gongzuotai",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    },
+    {
+      "icon_id": "3202616",
+      "name": "企业管理",
+      "font_class": "comcontrol",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "2611798",
+      "name": "数据大屏",
+      "font_class": "shujudaping",
+      "unicode": "e742",
+      "unicode_decimal": 59202
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+[
+  {
+    "name": "main",
+    "input": "electron-main/index.ts",
+    "output": "dist/main/build.js"
+  },
+  {
+    "name": "preload",
+    "input": "electron-main/preload.ts",
+    "output": "dist/main/preload.js"
+  },
+  {
+    "name": "tabPreload",
+    "input": "electron-main/tabPreload.ts",
+    "output": "dist/main/tabPreload.js"
+  },
+  {
+    "name": "clentPreload",
+    "input": "electron-main/clentPreload.ts",
+    "output": "dist/main/clentPreload.js"
+  },
+  {
+    "name": "dataPreload",
+    "input": "electron-main/dataPreload.ts",
+    "output": "dist/main/dataPreload.js"
+  }
+]

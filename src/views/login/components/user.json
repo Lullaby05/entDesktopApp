@@ -1,0 +1,24 @@
+{
+  "user": {
+    "id": 1,
+    "name": "王海安",
+    "avatar": "https://pic.rmb.bdstatic.com/bjh/203726324a891b1946ba223209cb3fee.png",
+    "email": "wangliqun@email.com",
+    "job": "frontend",
+    "jobName": "安全部长",
+    "enterpriseId": "80",
+    "tenantId": "1",
+    "organization": "Frontend",
+    "organizationName": "安全部门",
+    "location": "beijing",
+    "locationName": "北京",
+    "introduction": "人潇洒，性温存",
+    "personalWebsite": "https://www.arco.design",
+    "phone": "150****0000",
+    "registrationDate": "2013-05-10 12:10:00",
+    "accountId": "15012312300",
+    "certification": 1,
+    "userId": 1,
+    "role": "admin"
+  }
+}

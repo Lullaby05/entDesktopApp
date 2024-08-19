@@ -1,0 +1,326 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  // color: #666;
+  background-color: var(--color-bg-1);
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  ::-webkit-scrollbar {
+    display: block;
+    height: 10px;
+    width: 10px;
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #999999;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgb(201, 205, 212) content-box;
+    border: 2px solid transparent;
+    border-radius: 5px;
+  }
+}
+@base-dark-color: #1d2129;
+body[arco-theme='dark'] {
+  --bg1: #1d2129;
+  --bg2: #272e3b;
+  --bg3: #191d26;
+  --bg4: #333a47;
+  --bg5: #4b515e;
+  --bg6: #52607a;
+  --bg7: var(--bg1);
+  --bg8: var(--bg1);
+  --bg-modal: var(--bg1);
+  --color-bg-2: var(--bg2);
+  --color-neutral-2: var(--bg1);
+  --color-menu-light-bg: #272e3b;
+  --color-text-black: #ffffff;
+  --color-text-black1: #ffffff;
+  --color-text-grey: #ffffff;
+  --color-text-grey1: #a6a6a6;
+  --color-text-grey2: #ffffff;
+  --color-text-grey3: #bdbdbd;
+  --color-black-dark1: #ffffff;
+  --color-text-white: #333333;
+  --color-border: transparent;
+  --color-border2: #333a47;
+  --color-active: #ffffff;
+  --color-bg-active: rgba(53, 124, 240, 0.5);
+  --color-bg-active1: #505e78;
+  --color-bg-active2: #ffffff;
+  --color-mask-bg: rgba(80, 94, 120, 0.5);
+  --color-box-shadow: 0px 0px 6px transparent;
+  --color-menu-selected: var(--color-blue);
+  --color-menu-text-selected: #ffffff;
+  --color-box-shadow: rgba(0, 0, 0, 0.25);
+  --color-card-border: var(--color-bg-active1);
+  --color-bg-warning: var(--bg1);
+  // --el-bg-color: #272e3b;
+  // --el-text-color-regular: #333333;
+}
+body {
+  --bg1: #e5e6eb;
+  --bg2: #ffffff;
+  --bg3: #ffffff;
+  --bg4: #f2f2f2;
+  --bg5: #e0e0e0;
+  --bg6: #e5e6eb;
+  --bg7: #fbfbfb;
+  --bg8: #f7fbff;
+  --bg-modal: #ffffff;
+  --arcoblue-6: 53, 124, 240;
+  --color-blue: #357cf0;
+  --color-yellow: #ffc300;
+  --color-orange: #ff8d1a;
+  --color-red: #f53f3f;
+  --color-green: #43d1a2;
+  --color-black-dark1: #1a263b;
+  --color-text-black: #333333;
+  --color-text-black1: #1d2129;
+  --color-text-grey: #666666;
+  --color-text-grey1: #666666;
+  --color-text-grey2: #999999;
+  --color-text-grey3: #333333;
+  --color-text-white: #ffffff;
+  --color-border: #e5e5e5;
+  --color-border1: #ededed;
+  --color-border2: #e5e6eb;
+  --color-active: #357cf0;
+  --color-bg-active: #e6efff;
+  --color-bg-active1: #f5f9ff;
+  --color-bg-active2: #ebeced;
+  --color-box-shadow: 0px 0px 6px rgba(166, 166, 166, 0.15);
+  --color-menu-selected: #e6f0ff;
+  --color-menu-text-selected: var(--color-blue);
+  --color-box-shadow: #e5e5ea;
+  --color-card-border: #dfe1e3;
+  --color-bg-warning: #fff7e8;
+  // --el-bg-color: #e8e8e8;
+  // --el-text-color-regular: #333333;
+}
+// ------------- page 页面 开始 -------------------
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  // min-height: calc(100% - 45px);
+  min-height: 100%;
+  // padding: 15px 30px 30px;
+  padding: 20px 30px 10px 30px;
+  background-color: var(--color-fill-2);
+  font-family: 'Alibaba', Inter, '-apple-system', BlinkMacSystemFont,
+    'PingFang SC', 'Hiragino Sans GB', 'noto sans', 'Microsoft YaHei',
+    'Helvetica Neue', Helvetica, Arial, sans-serif;
+  .arco-card-header {
+    background-color: #f9f9f9;
+  }
+  & > .arco-card {
+    flex: 1;
+  }
+}
+// 按钮组
+.arco-radio-group-button {
+  padding: 0;
+  background-color: #fff;
+  .arco-radio-button {
+    margin: 0;
+    border: 1px solid #dcdfe6;
+  }
+  .arco-radio-button:hover {
+    color: rgb(var(--arcoblue-6));
+  }
+  .arco-radio-button.arco-radio-checked {
+    color: #fff;
+    background-color: rgb(var(--arcoblue-6));
+  }
+}
+
+.arco-card-body {
+  .arco-table-border .arco-table-container {
+    border: none;
+  }
+  .arco-table-border .arco-table-container {
+    & > .arco-scrollbar {
+      border-top: 1px solid var(--color-neutral-3);
+      border-left: 1px solid var(--color-neutral-3);
+    }
+  }
+  .arco-table-empty.arco-table-border
+    .arco-table-container.arco-table-scroll-y {
+    & > .arco-scrollbar {
+      border-bottom: 1px solid var(--color-neutral-3);
+    }
+  }
+}
+
+// .arco-input-wrapper,
+// .arco-select,
+// .arco-textarea,
+// .arco-select-view,
+// .arco-picker {
+//   background-color: #fff !important;
+//   border-radius: 2px !important;
+//   border: 1px solid #dcdfe6 !important;
+// }
+.arco-picker {
+  width: 100%;
+}
+
+// ------------- page 页面 结束 -------------------
+.echarts-tooltip-diy {
+  background: linear-gradient(
+    304.17deg,
+    rgb(253 254 255 / 60%) -6.04%,
+    rgb(244 247 252 / 60%) 85.2%
+  ) !important;
+  border: none !important;
+
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 6px !important;
+  backdrop-filter: blur(10px) !important;
+
+  .content-panel {
+    display: flex;
+    justify-content: space-between;
+    width: 164px;
+    height: 32px;
+    margin-bottom: 4px;
+    padding: 0 9px;
+    line-height: 32px;
+    background: rgb(255 255 255 / 80%);
+    border-radius: 4px;
+    box-shadow: 6px 0 20px rgb(34 87 188 / 10%);
+  }
+
+  .tooltip-title {
+    margin: 0 0 10px;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  .tooltip-title,
+  .tooltip-value {
+    display: flex;
+    align-items: center;
+    color: #1d2129;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 15px;
+    text-align: right;
+  }
+
+  .tooltip-item-icon {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 8px;
+    border-radius: 50%;
+  }
+}
+
+.general-card {
+  border: none;
+  border-radius: 4px;
+
+  & > .arco-card-header {
+    height: auto;
+    padding: 20px;
+    border: none;
+  }
+
+  & > .arco-card-body {
+    padding: 0 20px 20px;
+  }
+}
+
+.split-line {
+  border-color: rgb(var(--gray-2));
+}
+
+// 全局Arco组件库样式修改
+.arco-table-th {
+  color: var(--color-text-black1);
+}
+.arco-table-td {
+  color: var(--color-text-grey);
+}
+.arco-table-cell {
+  .arco-btn-text {
+    height: 28px;
+    line-height: 28px;
+  }
+  .circle {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin-right: 4px;
+    background-color: rgb(var(--blue-6));
+    border-radius: 50%;
+
+    &.pass {
+      background-color: rgb(var(--green-6));
+    }
+  }
+}
+
+.arco-modal {
+  background-color: var(--bg-modal);
+  .arco-modal-container {
+    .arco-modal-header {
+      border-radius: var(--border-radius-medium) var(--border-radius-medium) 0 0;
+    }
+    .arco-modal-footer {
+      border-top: none;
+    }
+  }
+}
+
+.arco-drawer {
+  background-color: var(--bg-modal);
+  .arco-card {
+    // background-color: transparent;
+  }
+  .arco-drawer-container {
+    // .arco-drawer-header {
+    //   background-color: var(--bg6);
+    // }
+  }
+}
+
+.arco-menu-inner {
+  font-family: 'Alibaba', Inter, '-apple-system', BlinkMacSystemFont,
+    'PingFang SC', 'Hiragino Sans GB', 'noto sans', 'Microsoft YaHei',
+    'Helvetica Neue', Helvetica, Arial, sans-serif;
+  .arco-menu-inline-header.arco-menu-selected .arco-menu-title,
+  .arco-menu-light .arco-menu-inline-header.arco-menu-selected,
+  .arco-menu-inline-header.arco-menu-selected:not(.arco-menu-has-icon) {
+    font-family: 'Alibaba-Medium';
+    color: #357cf0 !important;
+  }
+  .arco-menu-inline {
+    .arco-menu-item.arco-menu-selected {
+      background: #f5f9ff;
+      .arco-menu-item-inner {
+        font-family: 'Alibaba';
+        font-weight: 400;
+        color: var(--color-menu-text-selected) !important;
+      }
+    }
+  }
+  .arco-menu-item.arco-menu-selected {
+    color: var(--color-menu-text-selected) !important;
+  }
+  .arco-menu-light .arco-menu-inline-header {
+    color: #383838;
+  }
+}

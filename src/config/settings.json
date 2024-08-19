@@ -1,0 +1,19 @@
+{
+  "theme": "light",
+  "colorWeak": false,
+  "navbar": true,
+  "menu": true,
+  "topMenu": false,
+  "hideMenu": false,
+  "menuCollapse": false,
+  "footer": false,
+  "themeColor": "#357cf0",
+  "menuWidth": 210,
+  "globalSettings": false,
+  "device": "desktop",
+  "tabBar": true,
+  "menuFromServer": true,
+  "serverMenu": [],
+  "isPadding": false,
+  "btnPermission": []
+}

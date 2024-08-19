@@ -1,0 +1,41 @@
+@font-face {
+  font-family: 'Alibaba';
+  src: url('./Alibaba-PuHuiTi-Regular.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Alibaba-Medium';
+  src: url('./Alibaba-PuHuiTi-Medium.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* @font-face {
+  font-family: 'Alibaba';
+  src: url('./SourceHanSansSC-Regular-2.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Alibaba-Medium';
+  src: url('./SourceHanSansOLD-Medium-2.otf');
+  font-weight: normal;
+  font-style: normal;
+} */
+
+@font-face {
+  font-family: 'RoboTo';
+  src: url('./Roboto-Regular-14.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: '优设标题黑';
+  src: url('./YouSheBiaoTiHei-2.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
